@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cigarette Meditations</title>
+   <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <!-- Teach Elora about Color Palettes -->
+  <!-- In web, there is color(stroke) and background-color(fill) -->
+
+  <body>
+    <div id="navbar">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <div id="CigaretteWrapper">
+        <div id="CigaretteContainer">
+          <div id="colorCover"></div>
+          <img
+            id="cigaretteFull"
+            src="./cigarettefull.png"
+            alt="Cigarette Full"
+          />
+          <div id="cigaretteFlame">
+            <img src="./cigaretteflame.png" alt="Cigarette Flame" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-spacer"></div>
+
+    <table border="0" width="100%">
+      <!-- Row 2 (Big Quote, we call it Hero Banner) -->
+      <tr class="dynamic-screen-height">
+        <td colspan="6">
+          <h1>THE CIGARETTE MEDITATIONS:</h1>
+          <br />
+          <marquee>every small thing in my head because even the little thoughts deserves
+            to be read</marquee>
+        </td>
+      </tr>
+      <!-- Row 3 (The black Quote and Images) -->
+      <tr class="dynamic-screen-height black-background">
+        <td colspan="5" style="color: white">
+          One day, quite some time ago, I happened on a photograph of
+          Napoleon's youngest brother, Jerome, taken in 1852. And I realized
+          then, with an amazement I have not been able to lessen since: 'I am
+          looking at eyes that looked at the Emperor.' Sometimes I would mention
+          this amazement, but since no one seemed to share it, nor even to
+          understand it (life consists of these little touches of solitude), I
+          forgot about it.
+        </td>
+        <td colspan="1">
+          <img src="./Roland Barthes.jpeg" />
+        </td>
+      </tr>
+      <!-- Row 4 (Video) -->
+      <tr style="height: 100vh; width: 100vw">
+        <td colspan="6">
+          <iframe
+            id="videoIframe"
+            src="https://www.youtube.com/embed/TJKBw6eYReI?controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&playlist=TJKBw6eYReI"
+            title="cigarettes people left behind"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </td>
+      </tr>
+    </table>
+    <script src="./app.js" type="text/javascript">
+      
+    </script>
+  </body>
+</html>

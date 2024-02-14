@@ -1,0 +1,106 @@
+
+      body {
+        margin: 0;
+      }
+      td {
+        text-align: center;
+        vertical-align: middle;
+      }
+      iframe {
+        width: 100vw;
+        height: 100vh;
+      }
+      .black-background {
+        background-color: black;
+      }
+      .navbar-spacer {
+        height: 50px;
+      }
+      .cigarette-graphic {
+        color: red;
+        background-color: rgb(101, 206, 36);
+        padding: 30px;
+      }
+      .menu-button-width {
+        width: 100px;
+      }
+      .underline {
+        text-decoration: underline;
+      }
+      .dynamic-screen-height {
+        height: calc(100vh - 50px);
+      }
+      /* Style the navbar */
+      #navbar {
+        overflow: hidden;
+        background-color: #d661ff;
+      }
+      /* Navbar links */
+      #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px;
+        height: 50px;
+        text-decoration: none;
+      }
+
+      /* Page content */
+      .content {
+        padding: 16px;
+      }
+
+      /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+      .sticky + .content {
+        padding-top: 60px;
+      }
+
+      /* Interactive Cigarette CSS comes here */
+      #CigaretteWrapper {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        z-index: 99999;
+      }
+      #CigaretteContainer {
+        position: relative;
+        width: 304px; /* Width of your images */
+        height: 50px; /* Height of your images */
+        overflow: hidden;
+        background-color: #d661ff; /* Same as the body background */
+      }
+      #colorCover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 10%; /* Initial width of the color cover */
+        background-color: #d661ff; /* Color of the square */
+        transition: width 0.3s linear; /* Synchronized transition */
+        z-index: 50;
+      }
+      #cigaretteFull,
+      #cigaretteFlame {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+      }
+      #cigaretteFull {
+        width: 100%;
+        z-index: 1;
+      }
+      #cigaretteFlame {
+        z-index: 999;
+        width: 100%;
+        transition: transform 0.3s linear; /* Synchronized transition */
+        transform: translateX(-10%); /* Start slightly off-screen */
+      }
