@@ -3,41 +3,129 @@
   <head>
     <title>Cigarette Meditations</title>
     <style>
-        tr{
-            height: 100px;
+        body{
+            margin:0;
         }
         td{
             text-align: center;
             vertical-align: middle;
         }
+
+        .navbar-spacer{
+            height: 46px;
+        }
+        .cigarette-graphic{
+            color:rgb(255, 255, 255);background-color:rgb(231, 48, 248); padding:30px;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+        .menu-button-width{
+            width:100px;
+        }
+        .dynamic-screen-height{
+            height: calc(100vh - 48px);
+        }
+        .black-background {
+            background-color:black;
+        }
+        /* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
     </style>
   </head>
 
   <!-- Teach Elora about Color Palettes -->
 
   <body>
+
+    <div id="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="navbar-spacer">
+      </div>
+
     <table border="1" width="100%">
         <!-- Row 1 (Header) -->
-      <tr>
-        <td>PIIIII</td>
-        <td>B</td>
-        <td>C</td>
-        <td>D</td>
-        <td>Cigarette</td>
-      </tr>
+      <!-- <tr>
+        <td class="cigarette-graphic underline" style="width:100px">HOME</td>
+        <td class="menu-button-width">ABOUT ME</td>
+        <td class="menu-button-width">CONTACT</td>
+        <td class="menu-button-width">SUBMIT</td>
+        <td class="menu-button-width"></td>
+
+        <td class="cigarette-graphic">Cigarette
+        </td>
+      </tr> -->
       <!-- Row 2 (Big Quote, we call it Hero Banner) -->
-      <tr>
-        <td colspan="5">Big Quote</td>
+      <tr class="dynamic-screen-height">
+
+        <td colspan="6">
+            <h1>THE CIGARETTE MEDITATIONS:</h1> <br>
+            every small thing in my head because even the little thoughts deserve to be read</td>
       </tr>
       <!-- Row 3 (The black Quote and Images) -->
-      <tr>
-        <td colspan="3">Quote</td>
-        <td colspan="2">Image</td>
+      <tr class="dynamic-screen-height black-background">
+        <td colspan="5">“One day, quite some time ago, I happened on a photograph of Napoleon’s youngest brother, Jerome, taken in 1852. And I realized then, with an amazement I have not been able to lessen since: ‘I am looking at eyes that looked at the Emperor.’ Sometimes I would mention this amazement, but since no one seemed to share it, nor even to understand it (life consists of these little touches of solitude), I forgot about it.” </td>
+        <td colspan="1">
+            <img src="./Roland Barthes.jpeg"
+        </td>
       </tr>
       <!-- Row 4 (Video) -->
-      <tr>
-        <td colspan="5">Video</td>
+      <tr class="dynamic-screen-height">
+        <td colspan="6"><iframe width="966" height="543" src="https://www.youtube.com/embed/TJKBw6eYReI" title="cigarettes people left behind" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
       </tr>
     </table>
+    <script>
+        // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    </script>
   </body>
 </html>
