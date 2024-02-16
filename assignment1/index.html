@@ -10,9 +10,9 @@
   <!-- In web, there is color(stroke) and background-color(fill) -->
 
   <body>
-    <div id="navbar">
+    <div id="navbar" >
       <a href="#home">Home</a>
-      <a href="#news">News</a>
+      <a href="#submit">Submit</a>
       <a href="#contact">Contact</a>
       <div id="CigaretteWrapper">
         <div id="CigaretteContainer">
@@ -31,29 +31,27 @@
 
     <div class="navbar-spacer"></div>
 
-    <table border="0" width="100%">
+    <table style="border:0 ;width:100%;">
       <!-- Row 2 (Big Quote, we call it Hero Banner) -->
       <tr class="dynamic-screen-height">
-        <td colspan="6">
-          <h1>THE CIGARETTE MEDITATIONS:</h1>
-          <br />
-          <marquee>every small thing in my head because even the little thoughts deserves
+        <td colspan="6" style="font-size:50px" >
+          <h1 style="margin-bottom: 30px;"> THE CIGARETTE MEDITATIONS:</h1>
+          <!-- <br /> -->
+          <marquee> every small thing in my head because even the little thoughts deserve
             to be read</marquee>
         </td>
       </tr>
       <!-- Row 3 (The black Quote and Images) -->
       <tr class="dynamic-screen-height black-background">
-        <td colspan="5" style="color: white">
-          One day, quite some time ago, I happened on a photograph of
-          Napoleon's youngest brother, Jerome, taken in 1852. And I realized
-          then, with an amazement I have not been able to lessen since: 'I am
-          looking at eyes that looked at the Emperor.' Sometimes I would mention
-          this amazement, but since no one seemed to share it, nor even to
-          understand it (life consists of these little touches of solitude), I
-          forgot about it.
-        </td>
-        <td colspan="1">
-          <img src="./Roland Barthes.jpeg" />
+        <td colspan="5" style="position: relative;">
+          <!-- Image as background -->
+          <img src="./Roland Barthes.jpeg"  style="width: 100%; height: auto;" />
+          <!-- Text in the top-left corner -->
+          <div style="position: absolute; top: 8%; left: 5%; color: white; text-align: left; max-width: 40%; font-size:40px">
+            <b>
+            ONE DAY, QUITE SOME TIME AGO, I HAPPENED ON A PHOTOGRAPH OF NAPOLEON'S YOUNGEST BROTHER, JEROME, TAKEN IN 1852. AND I REALIZED THEN, WITH AN AMAZEMENT I HAVE NOT BEEN ABLE TO LESSEN SINCE: 'I AM LOOKING AT EYES THAT LOOKED AT THE EMPEROR.' SOMETIMES I WOULD MENTION THIS AMAZEMENT, BUT SINCE NO ONE SEEMED TO SHARE IT, NOR EVEN TO UNDERSTAND IT (LIFE CONSISTS OF THESE LITTLE TOUCHES OF SOLITUDE), I FORGOT ABOUT IT
+          </b>
+          </div>
         </td>
       </tr>
       <!-- Row 4 (Video) -->
@@ -69,6 +67,69 @@
           ></iframe>
         </td>
       </tr>
+
+      <!--Row for Pictures-->
+
+      <tr class="dynamic-screen-height">
+        <td colspan="6" style="font-size:35px">
+          <h1 style="margin-bottom: 40px; margin-top:170px"> <marquee>About</marquee></h1>
+          <!-- <br /> -->
+          <div style="color: black;  max-width: 83%; font-size:35px; margin-left: auto; margin-right: auto; margin-bottom: 150px;">
+           Cigarette Meditations is a project that offers a space for anyone who wanted to share a thought but stayed
+              quiet because they believed it was too insignificant or trivial for anyone else to care. Through keeping
+              submissions anonymous, Cigarette Meditatioins becomes an archive through which we can all feel a little
+              less alone. See previous submissions below:
+          </div>
+        <img style="margin:20px 20px 40px 20px;" src="./Moon2.jpg" />
+
+      </tr>
+
+    <!--New Section-->
+      <tr class="dynamic-screen-height">
+        <td colspan="6" >
+        <img style="margin: 20px 20px 20px 20px;" src="./Karina.jpg" />
+        </td>
+        </tr>
+
+        <tr class="dynamic-screen-height">
+          <td colspan="6" >
+          <img src="./Ocean.jpg" />
+          </td>
+          </tr>
+
+
+
+            <tr class="dynamic-screen-height">
+              <td colspan="6" >
+              <img style="margin: 20px 20px 20px 20px;" src="./TeaChairs.jpg" />
+              </td>
+              </tr>
+  
+              <tr class="dynamic-screen-height">
+                <td colspan="6" >
+                <img style="margin: 20px 20px 20px 20px;" src="./Chair.jpg" />
+                </td>
+                </tr>
+
+                <tr class="dynamic-screen-height">
+                  <td colspan="6" >
+                  <img style="margin: 20px 20px 20px 20px;" src="./image 2.jpg" />
+                  </td>
+                  </tr>
+
+                  <tr class="dynamic-screen-height">
+                    <td colspan="6" >
+                      <div style="color: black;  max-width: 83%; font-size:25px; margin-left: auto; margin-right: auto; margin-bottom: 0px;">
+                       Talk to the creator!
+              
+                       Email: edt7330@nyu.edu
+                       </div>
+                    </td>
+                    </tr>
+
+        
+
+
     </table>
     <script src="./app.js" type="text/javascript">
       
