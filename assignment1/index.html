@@ -1,21 +1,21 @@
-
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Title of the Project -->
     <title>Cigarette Meditations</title>
+    <!-- Link CSS to HTML -->
    <link rel="stylesheet" href="./style.css">
   </head>
 
-  <!-- Teach Elora about Color Palettes -->
-  <!-- In web, there is color(stroke) and background-color(fill) -->
-
   <body>
-    <!-- This is the navigation bar -->
+    <!-- This is the navigation/menu bar -->
     <div id="navbar" >
       <a href="#home">Home</a>
       <a href="#submit">Submit</a>
       <a href="#contact">Contact</a>
-      <!-- These are the three layers of the cigarette scroll bar at the top -->
+
+     <!-- This is the code for the cigarette scroll at the top right of the webpage -->
+     <!-- The cigarette scroll consists of three layers: the cigarette flame, the cigarette body, and a pink square that gives the 'scroll' effect, seen below -->
       <div id="CigaretteWrapper">
         <div id="CigaretteContainer">
           <div id="colorCover"></div>
@@ -30,27 +30,28 @@
         </div>
       </div>
     </div>
-    
 
     <div class="navbar-spacer"></div>
 
-    <!-- This is the heading of the webpage -->
+    <!-- Heading of the webpage -->
     <table style="border:0 ;width:100%;">
-      <!-- Row 2 (Big Quote, we call it Hero Banner) -->
+      <!-- I created a table to create this webpage-->
+      <!-- The first section of the webpage is below, which consists of the title and subtitle -->
       <tr class="dynamic-screen-height">
         <td colspan="6" style="font-size:50px" >
           <h1 style="margin-bottom: 30px;"> THE CIGARETTE MEDITATIONS:</h1>
-          <!-- <br /> -->
+          <!-- I used an outdated marquee function to make the subtitle move! So cute! -->
           <marquee> every small thing in my head because even the little thoughts deserve
             to be read</marquee>
         </td>
       </tr>
-      <!-- Row 3 (The black Quote and Images) -->
+
+      <!-- The second section of the webpage is a picture and quote by Roland Barthes-->
       <tr class="dynamic-screen-height black-background">
         <td colspan="5" style="position: relative;">
           <!-- Image as background -->
           <img src="./Roland Barthes.jpeg"  style="width: 100%; height: auto;" />
-          <!-- Text in the top-left corner -->
+          <!-- Text starts from the top left corner -->
           <div style="position: absolute; top: 8%; left: 5%; color: white; text-align: left; max-width: 40%; font-size:40px">
             <b>
             ONE DAY, QUITE SOME TIME AGO, I HAPPENED ON A PHOTOGRAPH OF NAPOLEON'S YOUNGEST BROTHER, JEROME, TAKEN IN 1852. AND I REALIZED THEN, WITH AN AMAZEMENT I HAVE NOT BEEN ABLE TO LESSEN SINCE: 'I AM LOOKING AT EYES THAT LOOKED AT THE EMPEROR.' SOMETIMES I WOULD MENTION THIS AMAZEMENT, BUT SINCE NO ONE SEEMED TO SHARE IT, NOR EVEN TO UNDERSTAND IT (LIFE CONSISTS OF THESE LITTLE TOUCHES OF SOLITUDE), I FORGOT ABOUT IT
@@ -58,7 +59,7 @@
           </div>
         </td>
       </tr>
-      <!-- This is the section for the video -->
+      <!-- The third section contains the video -->
       <tr style="height: 100vh; width: 100vw">
         <td colspan="6">
           <iframe
@@ -72,13 +73,11 @@
         </td>
       </tr>
 
-      <!--These are the sections for the ABOUT section of the page-->
-
+      <!--The fourth section contains the page description-->
       <tr class="dynamic-screen-height">
         <td colspan="6" style="font-size:35px">
-          <!-- I used marquee to page the word move! So cute -->
+          <!-- Que cute marquee tag again! -->
           <h1 style="margin-bottom: 40px; margin-top:170px"> <marquee>About</marquee></h1> 
-          <!-- <br /> -->
           <div style="color: black;  max-width: 83%; font-size:35px; margin-left: auto; margin-right: auto; margin-bottom: 200px;">
            Cigarette Meditations is a project that offers a space for anyone who wanted to share a thought but stayed
               quiet because they believed it was too insignificant or trivial for anyone else to care. Through keeping
@@ -86,21 +85,19 @@
               less alone. See previous submissions below:
           </div>
 
+          <!-- The first mock 'submissions' containing quotes and pictures -->
           <div style="color: black;  max-width: 83%; font-size:35px; margin-left: auto; margin-right: auto; margin-bottom: 15px;">
            <i> I was looking at the moon and I thought about you. My friends don't want to hear me talk about you anymore. </i>
            </div>
-    
         <img style="margin:20px 20px 40px 20px;" src="./Moon2.jpg" />
-
       </tr>
 
-    <!--New Section for Pictures-->
+    <!--These are the rest of the sections for the remaining mock submissions, all containing quotes and pictures-->
       <tr class="dynamic-screen-height">
         <td colspan="6" >
           <div style="color: black;  max-width: 83%; font-size:35px; margin-left: auto; margin-right: auto; margin-bottom: 15px; margin-top: 50px;">
             <i> I draw the first letter of your name every time I smoke a cigarette now. I don't know where you went. But I miss you. </i>
             </div>
-     
         <img style="margin: 20px 20px 20px 20px;" src="./Karina.jpg" />
         </td>
         </tr>
@@ -141,18 +138,15 @@
                   </td>
                   </tr>
 
+                  <!-- This last section is a link to my email -->
                   <tr class="dynamic-screen-height">
                     <td colspan="6" >
                       <div style="color: black;  max-width: 83%; font-size:25px; margin-left: auto; margin-right: auto; margin-bottom: 0px;">
                        Talk to the creator!
-
-                       <!-- This is my email (you can click it to send Elora an email) -->
-              
                        Email: <a href="mailto:edt7330@nyu.edu">edt7330@nyu.edu</a>
                        </div>
                     </td>
                     </tr>
-
 
     </table>
     <script src="./app.js" type="text/javascript">

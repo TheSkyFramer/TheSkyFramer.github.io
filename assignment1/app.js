@@ -1,7 +1,6 @@
-// ---------------------
-      // Sticky Navbar
-      // ---------------------
-      // Get the navbar
+
+      // This makes the navigation/menu bar stick at the top as you scroll
+      // A 'sticky navbar' if you will
       var navbar = document.getElementById("navbar");
 
       // Get the offset position of the navbar
